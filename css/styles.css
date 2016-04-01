@@ -1,0 +1,32 @@
+.jumbotron {
+  background-color: black;
+  font-size: 62pt;
+  text-align: center;
+  font-family: arial;
+  color: lightgrey;
+
+}
+.submit {
+  text-align: center;
+}
+.form-group {
+  text-align: center;
+}
+.btn {
+  text-align: center;
+}
+.h2 {
+font-size: 22pt;
+text-align: center;
+}
+.opener {
+  text-align: center;
+}
+.output {
+  text-align: center;
+}
+img {
+height: 160px;
+width: 160px;
+
+}
