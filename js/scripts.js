@@ -1,28 +1,25 @@
 // Business Logic Section //
-        var pingPong = function(num) {
+var pingPong = function(num) {
 
-        var resultsArray = [];
+var resultsArray = [];
 
-        for ( var i = 1; i <= num; i++){
-          if (integer % 3 === 0) {
-          resultsArray.push("ping");
-        }
-          if (integer % 5 === 0) {
-          resultsArray.push("pong");
-        }
-        if (integer % 23 === 0) {
-
-          resultsArray.push("king");
-        }
-        if (integer % 32 === 0) {
-          resultsArray.push("kong")
-        }
-          if (!integer) {
-          resultsArray.push(i);
-        }
-          return resultsArray;
-          console.log();
+  for ( var i = 1; i <= num; i++){
+    if ((i % 3 === 0) && (i % 5 === 0)) {
+      resultsArray.push("pingPong");
+    } else if (i % 23 === 0) {
+        resultsArray.push("king");
+    } else if (i % 3 === 0) {
+      resultsArray.push("ping");
+    } else if (i % 5 === 0) {
+      resultsArray.push("pong");
+    } else if (i % 32 === 0) {
+      resultsArray.push("kong");
+    } else {
+      resultsArray.push(i);
     }
+  }
+
+  return resultsArray;
 }
 
 // User Interface Logic //
@@ -32,12 +29,12 @@ $(document).ready(function() {
       $(".output").text("");
       var integer = parseInt($("#integer").val());
 
-        var newArray = new pingPong();
+        var newArray = pingPong(integer);
 
 
-        forEach(function(newArray) {
-      $(".output").append("<li>" + newArray(i) + "</li>");
-  });
+      newArray.forEach(function(number) {
+        $(".output").append("<li>" + number + "</li>");
+      });
 
   });
 });
