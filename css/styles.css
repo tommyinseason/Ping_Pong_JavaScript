@@ -1,6 +1,6 @@
 .jumbotron {
   background-color: black;
-  font-size: 72pt;
+  font-size: 62pt;
   text-align: center;
   font-family: arial;
   color: lightgrey;
@@ -21,4 +21,12 @@ text-align: center;
 }
 .opener {
   text-align: center;
+}
+.output {
+  text-align: center;
+}
+img {
+height: 160px;
+width: 160px;
+
 }
